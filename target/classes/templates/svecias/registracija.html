@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Svečių Registracija</title>
+    <meta charset="UTF-8"/>
+</head>
+<body>
+    <a href="index.html" th:href="@{/}">Atgal į pagrindinį puslapį</a>
+
+    <h1>Svečio registracija</h1>
+
+    <form action="#" th:action="@{/svecias/registracija}" th:object="${svecias}" method = "POST">
+        <p>
+            <input type="text" th:field="*{vardas}" placeholder="vardas"/>
+        </p>
+        <p>
+            <input type="text" th:field="*{pavarde}" placeholder="pavardė"/>
+        </p>
+        <p>
+            <button type="submit">Registruotis</button>
+        </p>
+    </form>
+</body>
+</html>

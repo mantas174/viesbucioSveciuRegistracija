@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title th:text="${kambarys.kambario_id}">Kambario numeris</title>
+    <meta charset="UTF-8"/>
+</head>
+
+<body>
+<a href="/kambariai/visi.html" th:href="@{/kambariai/visi}">Atgal į visų kambarių sąrašą</a>
+<br/>
+<a href="index.html" th:href="@{/}">Atgal į pagrindinį puslapį</a>
+<br/>
+<br/>
+
+
+    <h1 th:text="|${kambarioNumeris} - kambario registracijų istorija|"  >Istorija</h1>
+    <h2 th:if="${svecioNera}" th:text="${svecioNera}" >Prisiregistraves svečias</h2>
+    <h2 th:unless="${svecioNera}" th:text="|${kambarys.priregistruotasSvecias.vardas} ${kambarys.priregistruotasSvecias.pavarde}|" >Prisiregistraves svečias</h2>
+
+
+    <table border = "1">
+        <tr>
+            <th>
+                Vardas
+            </th>
+            <th>
+                Pavardė
+            </th>
+        </tr>
+        <tr th:each = "svecias : ${kambarys.registracijuIstorija}">
+            <td th:text="${svecias.vardas}" >vardas</td>
+            <td th:text="${svecias.pavarde}">pavarde</td>
+        </tr>
+
+    </table>
+
+
+
+</body>
+</html>
