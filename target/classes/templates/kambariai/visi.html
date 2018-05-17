@@ -9,11 +9,11 @@
 <body>
 <a href="index.html" th:href="@{/}">Atgal į pagrindinį puslapį</a>
 
-<h1>Pasirinkite kurio kambario registracijos istoriją norite peržiūrėti</h1>
+<h1>Pasirinkite kurio kambario registracijų istoriją norite peržiūrėti:</h1>
 
 <h2 th:each = "kambarys : ${visiKambariai}">
-    <a th:href="@{/kambario/istorija/{kamabrioNumeris}/(kamabrioNumeris=${kambarys.kambario_id})}"
-       th:text = "${kambarys.kambario_id}" >Kambario numeris</a>
+    <a th:href="@{/kambario/istorija/{kamabrioNumeris}/(kamabrioNumeris=${kambarys.kambarioNumeris})}"
+       th:text = "${kambarys.kambarioNumeris}" >Kambario numeris</a>
 </h2>
 
 </body>

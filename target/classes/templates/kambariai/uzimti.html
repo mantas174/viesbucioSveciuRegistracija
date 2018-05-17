@@ -9,9 +9,13 @@
 <body>
     <a href="index.html" th:href="@{/}">Atgal į pagrindinį puslapį</a>
 
-    <h1>Šiuo metu užimti kambariai</h1>
+    <!-- Jei sąrašas netuščias tai rodoma šita eilute -->
+    <h1 th:if="${!#lists.isEmpty(uzimtiKambariai)}">Šiuo metu užimti kambariai:</h1>
+    <!-- Jei sąrašas tuščias tai rodoma šita eilute -->
+    <h1 th:if="${#lists.isEmpty(uzimtiKambariai)}">Šiuo metu visi kambariai laisvi.</h1>
 
-    <table border = "1">
+    <!-- Jei sąrašas netuščias tai sukuriama lentelė kurioje bus atvaizduojama informacija -->
+    <table border = "1" th:if="${!#lists.isEmpty(uzimtiKambariai)}">
 
         <tr>
             <th>
@@ -25,7 +29,7 @@
             </th>
         </tr>
         <tr th:each = "kambarys : ${uzimtiKambariai}">
-            <td th:text="${kambarys.kambario_id}" >Kambario numeris</td>
+            <td th:text="${kambarys.kambarioNumeris}" >Kambario numeris</td>
             <td th:text="${kambarys.priregistruotasSvecias.vardas}">vardas</td>
             <td th:text="${kambarys.priregistruotasSvecias.pavarde}">pavarde</td>
         </tr>

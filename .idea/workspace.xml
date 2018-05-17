@@ -2,25 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2dfc5a41-85ef-449b-9560-192215fe5c44" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/registracija/controllers/IndexController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/registracija/controllers/KambariuController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/registracija/controllers/SvecioController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/registracija/models/Kambarys.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/registracija/models/Svecias.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/registracija/services/KambarioService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/registracija/services/KambarysServiceTEST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/registracija/services/KambarysServiceTESTTESTImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/registracija/services/SvecioService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/kambariai/istorija.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/kambariai/uzimti.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/kambariai/visi.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/svecias/isregistravimas.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/svecias/registracija.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/registracija/repositories/KambarysRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/registracija/services/KambarysService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/registracija/services/KambarysServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uT/JPA - Hibernate One to Many Mapping Example with Spring Boot - CalliCoder.url" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/registracija/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/registracija/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/registracija/controllers/KambariuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/registracija/controllers/KambariuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/registracija/controllers/SvecioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/registracija/controllers/SvecioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/registracija/models/Kambarys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/registracija/models/Kambarys.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/registracija/models/Svecias.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/registracija/models/Svecias.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/registracija/services/KambarioService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/registracija/services/KambarysServiceTESTTESTImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/registracija/services/KambarysServiceTESTTESTImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/registracija/services/SvecioService.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/kambariai/istorija.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/kambariai/istorija.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/kambariai/uzimti.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/kambariai/uzimti.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/kambariai/visi.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/kambariai/visi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/svecias/isregistravimas.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/svecias/isregistravimas.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/svecias/registracija.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/svecias/registracija.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/registracija/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/registracija/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/registracija/controllers/KambariuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/registracija/controllers/KambariuController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/registracija/controllers/SvecioController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/registracija/controllers/SvecioController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/registracija/models/Kambarys.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/registracija/models/Kambarys.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/registracija/models/Svecias.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/registracija/models/Svecias.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/registracija/services/KambarysServiceTESTTESTImpl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/registracija/services/KambarysServiceTESTTESTImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/registracija/services/SvecioService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/kambariai/istorija.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/kambariai/istorija.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/kambariai/uzimti.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/kambariai/uzimti.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/kambariai/visi.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/kambariai/visi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/svecias/isregistravimas.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/svecias/isregistravimas.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/svecias/registracija.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/svecias/registracija.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,20 +52,42 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SvecioService.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/registracija/services/SvecioService.java">
+      <file leaf-file-name="Svecias.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/registracija/models/Svecias.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+            <state relative-caret-position="34">
+              <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="KambarysServiceTEST.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/registracija/services/KambarysServiceTEST.java">
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+            <state relative-caret-position="136">
+              <caret line="8" column="69" selection-start-line="8" selection-start-column="69" selection-end-line="8" selection-end-column="69" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="registracija.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/svecias/registracija.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SvecioController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/registracija/controllers/SvecioController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="55" column="43" selection-start-line="55" selection-start-column="43" selection-end-line="55" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -54,11 +95,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="KambarioService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/registracija/services/KambarioService.java">
+      <file leaf-file-name="data.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/data.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
+            <state relative-caret-position="353">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="visi.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/kambariai/visi.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="71" selection-start-line="11" selection-start-column="71" selection-end-line="11" selection-end-column="71" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="uzimti.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/kambariai/uzimti.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="49" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Kambarys.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/registracija/models/Kambarys.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="901">
+              <caret line="57" column="47" selection-start-line="57" selection-start-column="47" selection-end-line="57" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -68,10 +139,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>pro</find>
+      <find>uzim</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -79,26 +156,35 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/registracija/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/registracija/controllers/IndexController.java" />
         <option value="$PROJECT_DIR$/src/main/java/registracija/controllers/VisiKambariaiController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
-        <option value="$PROJECT_DIR$/src/main/java/registracija/controllers/KambariuController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/kambariai/visi.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/svecias/registracija.html" />
-        <option value="$PROJECT_DIR$/src/main/java/registracija/services/KambarysService.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/kambariai/istorija.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/svecias/isregistravimas.html" />
         <option value="$PROJECT_DIR$/src/main/java/registracija/services/KambarysServiceTESTImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/registracija/models/Svecias.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/kambariai/uzimti.html" />
-        <option value="$PROJECT_DIR$/src/main/java/registracija/controllers/SvecioController.java" />
         <option value="$PROJECT_DIR$/src/main/java/registracija/services/KambarysServiceTEST.java" />
-        <option value="$PROJECT_DIR$/src/main/java/registracija/services/KambarioService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/registracija/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/registracija/services/SvecioService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/src/main/java/registracija/services/KambarioService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/registracija/reposiroties/SveciasRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/registracija/repositories/SveciasRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/registracija/services/KambarysServiceTESTTESTImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/registracija/services/SveciasService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/registracija/services/SveciasServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/svecias/isregistravimas.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/svecias/registracija.html" />
+        <option value="$PROJECT_DIR$/src/main/java/registracija/repositories/KambarysRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/kambariai/uzimti.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/registracija/models/Kambarys.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/kambariai/istorija.html" />
+        <option value="$PROJECT_DIR$/src/main/java/registracija/services/KambarysService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/registracija/services/KambarysServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/registracija/controllers/KambariuController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/kambariai/visi.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/data.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/registracija/models/Svecias.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/registracija/controllers/SvecioController.java" />
       </list>
     </option>
   </component>
@@ -180,6 +266,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="registracija" type="462c0819:PsiDirectoryNode" />
+              <item name="repositories" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="viesbucio sveciu registracija" type="b2602c69:ProjectViewProjectNode" />
+              <item name="viesbucio sveciu registracija" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="registracija" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -225,6 +320,11 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../JAVA mokausi/PROJEKTAI/Chat" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Mantas\Desktop\JAVAmokausi\PROJEKTAI\viesbucio sveciu registracija\uT" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -315,7 +415,7 @@
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="bottom" id="TODO" order="11" />
+      <window_info anchor="bottom" id="TODO" order="9" />
       <window_info anchor="bottom" id="Messages" order="4" weight="0.32972974" />
       <window_info anchor="right" id="Palette&#9;" order="1" />
       <window_info id="Image Layers" order="4" />
@@ -323,86 +423,74 @@
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.32972974" />
+      <window_info anchor="bottom" id="Run" order="10" visible="true" weight="0.33081082" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.32972974" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.25560537" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.2746637" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info id="UI Designer" order="1" />
       <window_info anchor="right" id="Theme Preview" order="2" />
-      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="6" />
       <window_info anchor="right" id="Commander" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="5" />
-      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="bottom" id="Run" order="10" visible="true" weight="0.32972974" />
+      <window_info anchor="bottom" id="Heroku" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.2881166" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Theme Preview" order="2" />
+      <window_info anchor="bottom" id="TODO" order="9" />
+      <window_info anchor="bottom" id="Message" order="5" />
+      <window_info anchor="right" id="Commander" order="5" weight="0.4" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="Designer" order="0" />
+      <window_info id="UI Designer" order="1" />
+      <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
+      <window_info anchor="right" id="Palette&#9;" order="1" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.32972974" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="3" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info anchor="bottom" id="Find" order="6" />
+      <window_info anchor="bottom" id="Messages" order="4" weight="0.32972974" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/registracija/controllers/SvecioController.java</url>
+          <line>83</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="11" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/registracija/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#237#238#0" expanded="true" />
-            <element signature="e#292#293#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/layout.html">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/registracija/controllers/IndexController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/kambariai/visi.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/registracija/controllers/KambariuController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="18" column="36" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.14.RELEASE/spring-webmvc-4.3.14.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -411,31 +499,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/registracija/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" lean-forward="true" selection-end-line="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="45" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="45" />
+        <state relative-caret-position="238">
+          <caret line="14" column="89" selection-start-line="14" selection-start-column="89" selection-end-line="14" selection-end-column="89" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/svecias/registracija.html">
+    <entry file="file://$PROJECT_DIR$/uT/JPA - Hibernate One to Many Mapping Example with Spring Boot - CalliCoder.url">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/1.11.10.RELEASE/spring-data-jpa-1.11.10.RELEASE.jar!/org/springframework/data/jpa/repository/JpaRepository.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/1.11.10.RELEASE/spring-data-jpa-1.11.10.RELEASE.jar!/org/springframework/data/jpa/repository/Query.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/registracija/services/KambarysServiceTEST.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <caret line="10" column="52" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/kambariai/istorija.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/registracija/services/KambarysServiceTESTTESTImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="179">
+          <caret line="71" column="42" selection-start-line="71" selection-start-column="38" selection-end-line="71" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/svecias/isregistravimas.html">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.14.RELEASE/spring-web-4.3.14.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+        <state relative-caret-position="175">
+          <caret line="132" selection-start-line="132" selection-end-line="132" />
         </state>
       </provider>
     </entry>
@@ -446,82 +564,203 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/registracija/models/Svecias.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/svecias/isregistravimas.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="62" column="14" selection-start-line="62" selection-start-column="14" selection-end-line="62" selection-end-column="14" />
+        <state relative-caret-position="221">
+          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
           <folding>
-            <element signature="e#168#169#0" expanded="true" />
-            <element signature="e#200#201#0" expanded="true" />
-            <element signature="e#247#248#0" expanded="true" />
-            <element signature="e#289#290#0" expanded="true" />
-            <element signature="e#322#323#0" expanded="true" />
-            <element signature="e#351#352#0" expanded="true" />
-            <element signature="e#395#396#0" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/registracija/services/SveciasServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="48" lean-forward="true" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#431#432#0" expanded="true" />
-            <element signature="e#465#466#0" expanded="true" />
-            <element signature="e#495#496#0" expanded="true" />
-            <element signature="e#541#542#0" expanded="true" />
-            <element signature="e#579#580#0" expanded="true" />
+            <element signature="e#483#484#0" expanded="true" />
+            <element signature="e#604#605#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/registracija/services/SveciasService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/registracija/repositories/SveciasRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/registracija/repositories/KambarysRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uT/JPA - Hibernate One to One Mapping Example with Spring Boot - CalliCoder.url">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uT/JPA - Hibernate Many to Many Mapping Example with Spring Boot - CalliCoder.url">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="127" column="12" selection-start-line="127" selection-start-column="12" selection-end-line="127" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/kambariai/istorija.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/registracija/controllers/KambariuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="58" column="30" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/registracija/controllers/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#274#275#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/registracija/services/KambarysService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/registracija/services/KambarysServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="34" column="31" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#915#916#0" expanded="true" />
+            <element signature="e#966#967#0" expanded="true" />
+            <element signature="e#1031#1032#0" expanded="true" />
+            <element signature="e#1094#1095#0" expanded="true" />
+            <element signature="e#1170#1171#0" expanded="true" />
+            <element signature="e#1241#1242#0" expanded="true" />
+            <element signature="e#1810#1811#0" expanded="true" />
+            <element signature="e#1864#1865#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="47" column="21" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/registracija/models/Kambarys.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="57" column="47" selection-start-line="57" selection-start-column="47" selection-end-line="57" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/kambariai/uzimti.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+        <state relative-caret-position="238">
+          <caret line="14" column="49" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/kambariai/visi.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="71" selection-start-line="11" selection-start-column="71" selection-end-line="11" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/registracija/models/Svecias.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/data.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="69" selection-start-line="8" selection-start-column="69" selection-end-line="8" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/svecias/registracija.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/registracija/controllers/SvecioController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="80" column="55" selection-start-line="80" selection-start-column="55" selection-end-line="80" selection-end-column="55" />
+        <state relative-caret-position="336">
+          <caret line="55" column="43" selection-start-line="55" selection-start-column="43" selection-end-line="55" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/registracija/services/KambarioService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/registracija/services/KambarysServiceTESTTESTImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/registracija/services/KambarysServiceTEST.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/registracija/models/Kambarys.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/registracija/services/SvecioService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
         </state>
       </provider>
     </entry>

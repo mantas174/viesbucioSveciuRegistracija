@@ -6,20 +6,32 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import registracija.models.Kambarys;
-import registracija.services.KambarysServiceTEST;
+import registracija.services.KambarysService;
 
-import java.util.ArrayList;
+import java.util.List;
 
 @Controller
 public class KambariuController {
 
     @Autowired
-    private KambarysServiceTEST kambarysServiceTEST;
+    private KambarysService kambarysService;
+
+
+    @RequestMapping("/kambariai/uzimti")
+    public String uzimtiKambariai(Model model){
+
+        //paimami visi užimti kambariai
+        List<Kambarys> uzimtiKambariai = kambarysService.paimtUzimtusKambarius();
+        model.addAttribute("uzimtiKambariai", uzimtiKambariai);
+
+        return "kambariai/uzimti";
+    }
 
     @RequestMapping("/kambariai/visi")
     public String visiKambariai(Model model){
 
-        ArrayList<Kambarys> visiKambariai = kambarysServiceTEST.paimtVisusKambarius();
+        //paimami visi kambariai
+        List<Kambarys> visiKambariai = kambarysService.paimtVisusKambarius();
         model.addAttribute("visiKambariai", visiKambariai);
 
         return "kambariai/visi";
@@ -27,24 +39,24 @@ public class KambariuController {
 
     @RequestMapping("/kambario/istorija/{kambarioNumeris}")
     public String kambarioRegistracijuIstorija(@PathVariable("kambarioNumeris") int kambarioNumeris, Model model){
-        Kambarys kambarys = kambarysServiceTEST.surastPagalNumeri(kambarioNumeris);
-        String svecioNera;
+        //tikrinama ar duotas kambario numeris yra visu kambariu ribose
+        if(kambarioNumeris <= kambarysService.kambariuSkaicius() && kambarioNumeris > 0) {
+            Kambarys kambarioIstorija = kambarysService.surastPagalNumeri(kambarioNumeris);
+            String svecioNera;
 
-        model.addAttribute("kambarys", kambarys);
 
-        if(kambarys.getPriregistruotasSvecias() == null){
-            svecioNera = "Joks svečias prie šio kambario nepriregistruotas.";
-            model.addAttribute("svecioNera", svecioNera);
+            kambarioIstorija.surikiuotiRegistracijuIstorija();
+            model.addAttribute("kambarioIstorija", kambarioIstorija);
+
+            if (kambarioIstorija.getPriregistruotasSvecias() == null) {
+                svecioNera = "Joks svečias prie šio kambario nepriregistruotas.";
+                model.addAttribute("svecioNera", svecioNera);
+            }
+
+            return "kambariai/istorija";
+        }else{
+            // jei duotas kambario numeris nėra visų kamabrių ribose tai gražinama i kambarių pasirinkimo langą
+            return "redirect:/kambariai/visi";
         }
-
-        return "kambariai/istorija";
-    }
-
-    @RequestMapping("/kambariai/uzimti")
-    public String uzimtiKambariai(Model model){
-        ArrayList<Kambarys> uzimtiKambariai = kambarysServiceTEST.paimtUzimtusKambarius();
-        model.addAttribute("uzimtiKambariai", uzimtiKambariai);
-
-        return "kambariai/uzimti";
     }
 }

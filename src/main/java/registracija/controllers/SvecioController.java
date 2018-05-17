@@ -6,81 +6,105 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import registracija.models.Kambarys;
 import registracija.models.Svecias;
-import registracija.services.KambarysServiceTEST;
+import registracija.services.KambarysService;
+
 
 @Controller
 public class SvecioController {
+    public static final Svecias ISREGISTRUOJAMAS_SVECIAS = null;
+
 
     @Autowired
-    private KambarysServiceTEST kambarysServiceTEST;
-
-
-
+    private KambarysService kambarysService;
 
     @GetMapping("/svecias/registracija")
-    public String svecioRegistracijaForma(Model model){
+    public String svecioRegistracijaForma(Model model) {
         //model objektui pateikiamas nauajs svečio šablonas, svečio objekto
         //laukai (vardas, pavarde) bus naudojami informacijai užpildyti iš formos
         model.addAttribute("svecias", new Svecias());
-
         return "/svecias/registracija";
     }
+
     @PostMapping("/svecias/registracija")
-    public String svecioRegistracijaPateikimas(@ModelAttribute Svecias registruojamasSvecias){
+    public String svecioRegistracijaPateikimas(@ModelAttribute Svecias registruojamasSvecias, Model model) {
+        Kambarys tusciasKambarys;
+        String nepavyko;
+        String pavyko;
 
-
-        //iš svečio vardo ir pavardės pradžios panaikinami tarpai jei ivesti vien tik tarpai lieka tuscia eilute
-        registruojamasSvecias.setVardas(registruojamasSvecias.getVardas().trim());
-        registruojamasSvecias.setPavarde(registruojamasSvecias.getPavarde().trim());
-        if(registruojamasSvecias.arNetuscias()) {
+        if (registruojamasSvecias.arTeisingaiIvestas()) {
             try {
                 //svecio registracija
 
                 //"null" jei tuščio kambario nėra
-                Kambarys tusciasKambarys = kambarysServiceTEST.tusciasKambarys();
+                tusciasKambarys = kambarysService.tusciasKambarys();
 
+                //nurodoma kuriame kambaryje(numeris) bus priregistruotas svečias
+                registruojamasSvecias.setKambarysKuriamePriregistruotas(tusciasKambarys);
+
+                //į rastą tuščią kambarį idedama naujo svečio informacija
                 tusciasKambarys.setPriregistruotasSvecias(registruojamasSvecias);
                 tusciasKambarys.pridetiSveciaPrieIstorijos(registruojamasSvecias);
 
-                kambarysServiceTEST.redaguotiKambari(tusciasKambarys);
-            } catch (NullPointerException klaida) {
-                // tuščio kambario nėra
-                registruojamasSvecias.setVardas("NERASTA");
-                registruojamasSvecias.setPavarde("NERASTA");
-            }
-        }else {
-            System.out.println("TUSCIAS!!");
-        }
+                //įrašomi nauji kambario duomenys į duomenų bazę
+                kambarysService.atnaujintiKambarioDuomenis(tusciasKambarys);
 
+                //jeigu registracija sekminga sugeneruojama žinutė
+                pavyko = "Svečias užregistruotas į " + tusciasKambarys.getKambarioNumeris() + " kambary.";
+                model.addAttribute("pavyko", pavyko);
+            } catch (IndexOutOfBoundsException klaida){
+                // tuščio kambario nėra
+                nepavyko = "Šiuo metu lasvų kambarių nėra.";
+                model.addAttribute("nepavyko", nepavyko);
+            }
+        } else {
+            nepavyko = "Neteisingai įvesti duomenys.";
+            model.addAttribute("nepavyko", nepavyko);
+        }
         return "/svecias/registracija";
     }
 
 
     @GetMapping("/svecias/isregistravimas")
-    public String svecioIsregistravimoForma(Model model){
+    public String svecioIsregistravimoForma(Model model) {
         model.addAttribute("svecias", new Svecias());
         return "/svecias/isregistravimas";
     }
-    @PostMapping("/svecias/išregistravimas")
-    public String svecioIsregistravimoPateikimas(@ModelAttribute Svecias isregistruojamasSvecias){
-        if(isregistruojamasSvecias.arNetuscias()) {
+
+    @PostMapping("/svecias/isregistravimas")
+    public String svecioIsregistravimoPateikimas(@ModelAttribute Svecias isregistruojamasSvecias, Model model) {
+        Kambarys rastasKambarys;
+        String nepavyko;
+        String pavyko;
+
+        if (isregistruojamasSvecias.arTeisingaiIvestas()) {
             try {
                 //svecio isregistravimas
 
                 //null jei tokio svečio nėra
-                Kambarys rastasKambarys = kambarysServiceTEST.rastKambariPagalSvecia(isregistruojamasSvecias);
-                rastasKambarys.setPriregistruotasSvecias(null);
-                kambarysServiceTEST.redaguotiKambari(rastasKambarys);
+                rastasKambarys = kambarysService.rastKambariPagalSvecia(isregistruojamasSvecias);
+
+                //kambaryje kuriame buvo rastas svečias, priregistruotas svečias yra ištrinamas
+                rastasKambarys.setPriregistruotasSvecias(ISREGISTRUOJAMAS_SVECIAS);
+
+                //įrašomi nauji kambario duomenys į duomenų bazę
+                kambarysService.atnaujintiKambarioDuomenis(rastasKambarys);
+
+                //jeigu registracija sekminga sugeneruojama žinutė
+                pavyko = "Svečias išregistruotas iš " + rastasKambarys.getKambarioNumeris() + " kambario.";
+                model.addAttribute("pavyko", pavyko);
             } catch (NullPointerException klaida) {
                 // svečias su tokiu vardu ar pavarde nėra priregistruotas jokiam kambary
-                isregistruojamasSvecias.setVardas("NERASTAs s");
-                isregistruojamasSvecias.setPavarde("NERASTAs s");
+
+                nepavyko = "Svečias su tokiais duomenimis nėra priregistruotas jokiam kambaryje.";
+                model.addAttribute("nepavyko", nepavyko);
             }
-        }else{
-            isregistruojamasSvecias.setVardas("Tuscias");
-            isregistruojamasSvecias.setPavarde("Tuscias");
+        }else {
+            nepavyko = "Neteisingai įvesti duomenys.";
+            model.addAttribute("nepavyko", nepavyko);
         }
 
         return "/svecias/isregistravimas";
     }
+
+
 }

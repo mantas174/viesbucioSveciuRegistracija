@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 
 <head>
-    <title th:text="${kambarys.kambario_id}">Kambario numeris</title>
+    <title th:text="${kambarioIstorija.kambarioNumeris}">Kambario numeris</title>
     <meta charset="UTF-8"/>
 </head>
 
@@ -13,13 +13,14 @@
 <br/>
 <br/>
 
-
     <h1 th:text="|${kambarioNumeris} - kambario registracijų istorija|"  >Istorija</h1>
     <h2 th:if="${svecioNera}" th:text="${svecioNera}" >Prisiregistraves svečias</h2>
-    <h2 th:unless="${svecioNera}" th:text="|${kambarys.priregistruotasSvecias.vardas} ${kambarys.priregistruotasSvecias.pavarde}|" >Prisiregistraves svečias</h2>
+    <h2 th:unless="${svecioNera}" th:text="|Šiuo metu priregistruotas svecias: ${kambarioIstorija.priregistruotasSvecias.vardas} ${kambarioIstorija.priregistruotasSvecias.pavarde}|" >Prisiregistraves svečias</h2>
 
-
-    <table border = "1">
+    <!-- Jei sąrašas tuščias tai rodoma šita eilute -->
+    <h1 th:unless="${#lists.isEmpty(uzimtiKambariai)}">Šiuo metu visi kambariai laisvi.</h1>
+    <!-- Jei sąrašas netuščias tai sukuriama lentelė kurioje bus atvaizduojama informacija -->
+    <table border = "1" th:unless="${not #lists.isEmpty(uzimtiKambariai)}">
         <tr>
             <th>
                 Vardas
@@ -28,7 +29,7 @@
                 Pavardė
             </th>
         </tr>
-        <tr th:each = "svecias : ${kambarys.registracijuIstorija}">
+        <tr th:each = "svecias : ${kambarioIstorija.registracijuIstorija}">
             <td th:text="${svecias.vardas}" >vardas</td>
             <td th:text="${svecias.pavarde}">pavarde</td>
         </tr>

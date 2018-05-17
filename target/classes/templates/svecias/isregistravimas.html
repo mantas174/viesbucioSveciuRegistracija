@@ -9,7 +9,9 @@
 
 <h1>Svečio išregistravimas</h1>
 
-<form action="#" th:action="@{/svecias/išregistravimas}" th:object="${svecias}" method = "POST">
+<form action="#" th:action="@{/svecias/isregistravimas}" th:object="${svecias}" method = "POST">
+    <span style="color:red" th:text="${nepavyko}"></span>
+    <span style="color:green" th:text="${pavyko}"></span>
     <p>
         <input type="text" th:field="*{vardas}" placeholder="vardas"/>
     </p>
