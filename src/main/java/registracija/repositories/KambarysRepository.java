@@ -13,7 +13,6 @@ import java.util.List;
 @Repository
 public interface KambarysRepository extends JpaRepository<Kambarys, Integer> {
 
-
     @Query("SELECT k FROM Kambarys k ORDER BY k.kambarioNumeris ASC")
     List<Kambarys> visiSurikiuoti();
 
