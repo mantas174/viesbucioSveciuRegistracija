@@ -3,7 +3,6 @@ package registracija.services;
 import registracija.models.Kambarys;
 import registracija.models.Svecias;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public interface KambarysService {
