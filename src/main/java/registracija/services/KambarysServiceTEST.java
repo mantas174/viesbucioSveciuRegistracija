@@ -14,4 +14,7 @@ public interface KambarysServiceTEST {
 
     Kambarys tusciasKambarys();
     Kambarys rastKambariPagalSvecia(Svecias ieskomasSvecias);
+
+
+
 }

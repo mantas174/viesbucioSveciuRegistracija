@@ -107,4 +107,17 @@ public class SvecioController {
     }
 
 
+
+    @RequestMapping("/svecio_isregistravimas_du/{kambarioNumeris}")
+    public String svecioIsregistravimas(@PathVariable("kambarioNumeris") int kambarioNumeris){
+        //surandamas kambarys pagal numerį
+        Kambarys kamabrysIsKurioIregistruojamasVartotojas = kambarysService.surastPagalNumeri(kambarioNumeris);
+
+        //kambaryje kuriame buvo rastas svečias, priregistruotas svečias yra ištrinamas
+        kamabrysIsKurioIregistruojamasVartotojas.setPriregistruotasSvecias(ISREGISTRUOJAMAS_SVECIAS);
+
+        //įrašomi nauji kambario duomenys į duomenų bazę
+        kambarysService.atnaujintiKambarioDuomenis(kamabrysIsKurioIregistruojamasVartotojas);
+        return "redirect:/kambariai/uzimti";
+    }
 }

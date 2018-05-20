@@ -14,26 +14,35 @@
     <!-- Jei sąrašas tuščias tai rodoma šita eilute -->
     <h1 th:if="${#lists.isEmpty(uzimtiKambariai)}">Šiuo metu visi kambariai laisvi.</h1>
 
-    <!-- Jei sąrašas netuščias tai sukuriama lentelė kurioje bus atvaizduojama informacija -->
-    <table border = "1" th:if="${!#lists.isEmpty(uzimtiKambariai)}">
+    <form action="#">
+        <!-- Jei sąrašas netuščias tai sukuriama lentelė kurioje bus atvaizduojama informacija -->
+        <table border = "1" th:if="${!#lists.isEmpty(uzimtiKambariai)}">
 
-        <tr>
-            <th>
-                Kambario numeris
-            </th>
-            <th>
-                Priregistruoto asmens vardas
-            </th>
-            <th>
-                Priregistruoto asmens pavardė
-            </th>
-        </tr>
-        <tr th:each = "kambarys : ${uzimtiKambariai}">
-            <td th:text="${kambarys.kambarioNumeris}" >Kambario numeris</td>
-            <td th:text="${kambarys.priregistruotasSvecias.vardas}">vardas</td>
-            <td th:text="${kambarys.priregistruotasSvecias.pavarde}">pavarde</td>
-        </tr>
+            <tr>
+                <th>
+                    Kambario numeris
+                </th>
+                <th>
+                    Priregistruoto asmens vardas
+                </th>
+                <th>
+                    Priregistruoto asmens pavardė
+                </th>
+                <th>
+                    <!--išregistravimo nuorodai laikyti-->
+                </th>
+            </tr>
+            <tr th:each = "kambarys : ${uzimtiKambariai}">
+                <td th:text="${kambarys.kambarioNumeris}" >Kambario numeris</td>
+                <td th:text="${kambarys.priregistruotasSvecias.vardas}">vardas</td>
+                <td th:text="${kambarys.priregistruotasSvecias.pavarde}">pavarde</td>
 
-    </table>
+                <!--išregistravimo nuoroda-->
+                <td><a th:href="@{/svecio_isregistravimas_du/{kambarioNumeris}/(kambarioNumeris=${kambarys.kambarioNumeris})}"
+               th:inline="text" >X[[${kambarys.kambarioNumeris}]]</a></td>
+            </tr>
+
+        </table>
+    </form>
 </body>
 </html>
